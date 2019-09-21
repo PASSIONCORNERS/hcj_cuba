@@ -1,0 +1,92 @@
+.summary {
+}
+.container-summary {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.summary-title {
+  margin-top: 6em;
+  text-align: center;
+  h1 {
+    font-family: $fontG;
+    font-size: 2rem;
+    font-weight: 100;
+    color: $colorB;
+  }
+  p {
+    font-family: $fontA;
+    font-size: 1rem;
+    color: $colorG;
+    margin: 3em auto 0 auto;
+    max-width: 1200px;
+    text-align: left;
+    line-height: 2em;
+    span {
+      font-weight: 700;
+      color: $colorY;
+      cursor: pointer;
+      transition: 0.2s ease-in;
+    }
+    span:hover,
+    span:focus {
+      color: $colorB;
+      transition: 0.2s ease-in;
+    }
+  }
+}
+.summary-icons {
+  width: 70%;
+  margin: 0 auto 6em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.summary-icons-block {
+  margin-top: 3em;
+  text-align: center;
+  h3 {
+    margin-top: 2em;
+    font-family: $fontA;
+    color: $colorB;
+  }
+  p {
+    margin-top: 0.6em;
+    font-family: $fontA;
+    color: $colorG;
+  }
+}
+.summary-hr {
+  border-bottom: 1px solid #d8d0d8ec;
+}
+// Media Query Mixins
+
+@include atiphone6 {
+}
+
+@include at576 {
+}
+@include at768 {
+  .summary-icons {
+    flex-direction: row;
+  }
+  .summary-icons-block {
+    margin-top: 6em;
+  }
+}
+@include at992 {
+  .summary-icons {
+    flex-direction: row;
+  }
+  .summary-icons-block {
+    margin-top: 6em;
+  }
+}
+@include at1200 {
+  .summary-icons {
+    flex-direction: row;
+  }
+  .summary-icons-block {
+    margin-top: 6em;
+  }
+}

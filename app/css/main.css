@@ -98,7 +98,8 @@ header {
 nav ul {
   display: flex;
   flex-direction: column;
-  list-style: none; }
+  list-style: none;
+  margin-bottom: 1em; }
 
 nav li {
   text-align: center;
@@ -122,7 +123,8 @@ nav a:focus {
   header {
     height: 8vh; }
   nav ul {
-    flex-direction: row; }
+    flex-direction: row;
+    margin-bottom: 0; }
   nav li {
     margin-top: 0;
     margin-left: 3em; }
@@ -134,10 +136,82 @@ nav a:focus {
   header {
     height: 8vh; }
   nav ul {
-    flex-direction: row; }
+    flex-direction: row;
+    margin-bottom: 0; }
   nav li {
     margin-top: 0;
     margin-left: 3em; }
   nav a:hover,
   nav a:focus {
     padding-bottom: 21px; } }
+
+.container-summary {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto; }
+
+.summary-title {
+  margin-top: 6em;
+  text-align: center; }
+  .summary-title h1 {
+    font-family: "Lora", serif;
+    font-size: 2rem;
+    font-weight: 100;
+    color: #4e5665; }
+  .summary-title p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
+    color: #909090;
+    margin: 3em auto 0 auto;
+    max-width: 1200px;
+    text-align: left;
+    line-height: 2em; }
+    .summary-title p span {
+      font-weight: 700;
+      color: #ecb84c;
+      cursor: pointer;
+      transition: 0.2s ease-in; }
+    .summary-title p span:hover,
+    .summary-title p span:focus {
+      color: #4e5665;
+      transition: 0.2s ease-in; }
+
+.summary-icons {
+  width: 70%;
+  margin: 0 auto 6em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.summary-icons-block {
+  margin-top: 3em;
+  text-align: center; }
+  .summary-icons-block h3 {
+    margin-top: 2em;
+    font-family: "Nunito Sans", sans-serif;
+    color: #4e5665; }
+  .summary-icons-block p {
+    margin-top: 0.6em;
+    font-family: "Nunito Sans", sans-serif;
+    color: #909090; }
+
+.summary-hr {
+  border-bottom: 1px solid #d8d0d8ec; }
+
+@media (min-width: 768px) {
+  .summary-icons {
+    flex-direction: row; }
+  .summary-icons-block {
+    margin-top: 6em; } }
+
+@media (min-width: 992px) {
+  .summary-icons {
+    flex-direction: row; }
+  .summary-icons-block {
+    margin-top: 6em; } }
+
+@media (min-width: 1200px) {
+  .summary-icons {
+    flex-direction: row; }
+  .summary-icons-block {
+    margin-top: 6em; } }
