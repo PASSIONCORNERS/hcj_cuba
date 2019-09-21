@@ -80,3 +80,64 @@ legend {
     font-size: 15rem; }
   legend span {
     font-size: 1.5rem; } }
+
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  border-bottom: 1px solid #d8d0d8ec; }
+
+.container-nav {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none; }
+
+nav li {
+  text-align: center;
+  margin-top: 1em;
+  margin-left: 0; }
+
+nav a {
+  text-decoration: none;
+  color: #909090;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2rem;
+  transition: 0.2s ease-in; }
+
+nav a:hover,
+nav a:focus {
+  color: #4e5665;
+  transition: 0.2s ease-in;
+  border-bottom: 4px solid #ecb84c; }
+
+@media (min-width: 992px) {
+  header {
+    height: 8vh; }
+  nav ul {
+    flex-direction: row; }
+  nav li {
+    margin-top: 0;
+    margin-left: 3em; }
+  nav a:hover,
+  nav a:focus {
+    padding-bottom: 21px; } }
+
+@media (min-width: 1200px) {
+  header {
+    height: 8vh; }
+  nav ul {
+    flex-direction: row; }
+  nav li {
+    margin-top: 0;
+    margin-left: 3em; }
+  nav a:hover,
+  nav a:focus {
+    padding-bottom: 21px; } }

@@ -1,0 +1,84 @@
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  border-bottom: 1px solid #d8d0d8ec;
+}
+.container-nav {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  li {
+    text-align: center;
+    margin-top: 1em;
+    margin-left: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #909090;
+    font-family: $fontA;
+    font-size: 1.2rem;
+    transition: 0.2s ease-in;
+  }
+  a:hover,
+  a:focus {
+    color: $colorB;
+    transition: 0.2s ease-in;
+    border-bottom: 4px solid $colorY;
+  }
+}
+// Media Query Mixins
+
+@include atiphone6 {
+}
+
+@include at576 {
+}
+@include at768 {
+}
+@include at992 {
+  header {
+    height: 8vh;
+  }
+  nav {
+    ul {
+      flex-direction: row;
+    }
+    li {
+      margin-top: 0;
+      margin-left: 3em;
+    }
+    a:hover,
+    a:focus {
+      padding-bottom: 21px;
+    }
+  }
+}
+@include at1200 {
+  header {
+    height: 8vh;
+  }
+  nav {
+    ul {
+      flex-direction: row;
+    }
+    li {
+      margin-top: 0;
+      margin-left: 3em;
+    }
+    a:hover,
+    a:focus {
+      padding-bottom: 21px;
+    }
+  }
+}
