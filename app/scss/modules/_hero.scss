@@ -1,0 +1,85 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  h1 {
+    font-family: $fontG;
+    position: absolute;
+    font-size: 10rem;
+    color: #fff;
+    letter-spacing: 0.05em;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+}
+.hero-bg {
+  background-image: url("../img/bg-photo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+fieldset {
+  border: 2px solid #ecb84c;
+  padding: 25em 2.5em;
+  margin: 2em 2em;
+  transform: rotate(180deg) scaleX(-1);
+}
+legend {
+  text-align: center;
+  transform: rotate(180deg) scaleX(-1);
+  span {
+    font-family: $fontG;
+    margin: 0 1em;
+    color: #fff;
+    font-size: 1rem;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.3rem;
+  }
+}
+// Media Query Mixins
+
+@include atiphone6 {
+}
+
+@include at576 {
+}
+@include at768 {
+  .hero {
+    h1 {
+      font-size: 15rem;
+    }
+  }
+  legend {
+    span {
+      font-size: 1.2rem;
+    }
+  }
+}
+@include at992 {
+  .hero {
+    h1 {
+      font-size: 15rem;
+    }
+  }
+  legend {
+    span {
+      font-size: 1.5rem;
+    }
+  }
+}
+@include at1200 {
+  .hero {
+    h1 {
+      font-size: 15rem;
+    }
+  }
+  legend {
+    span {
+      font-size: 1.5rem;
+    }
+  }
+}
