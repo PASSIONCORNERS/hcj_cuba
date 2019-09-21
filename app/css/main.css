@@ -388,3 +388,33 @@ nav a:focus {
     grid-column: 8/13; }
   .general-detail-img2 {
     grid-column: 1/9; } }
+
+.cadillac {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto; }
+
+.container-cadillac {
+  margin: 6em auto 0 auto;
+  max-width: 1200px; }
+  .container-cadillac h1 {
+    text-align: center;
+    font-family: "Lora", serif;
+    font-size: 2rem;
+    font-weight: 100;
+    color: #4e5665; }
+  .container-cadillac p {
+    text-align: center;
+    color: #ecb84c;
+    margin: 0.6em 0 3em 0; }
+    .container-cadillac p img {
+      width: auto; }
+  .container-cadillac img {
+    width: 100%; }
+  .container-cadillac .cadillac-info {
+    margin-top: 2em;
+    text-align: left;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 2em;
+    color: #909090; }
