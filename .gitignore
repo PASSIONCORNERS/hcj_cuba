@@ -1,5 +1,9 @@
 public/local.php
-.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 # After your first big deploy and all of your files are already
 # on your web host you could uncomment the following items
