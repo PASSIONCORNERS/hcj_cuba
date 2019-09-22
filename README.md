@@ -1,4 +1,4 @@
-# restaurant
+# Cuba
 
 html, css, javascript
 
