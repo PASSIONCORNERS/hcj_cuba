@@ -1,0 +1,152 @@
+footer {
+  background-color: rgba(211, 211, 211, 0.2);
+  //   height: 35vh;
+}
+.container-footer {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  //   padding: 2em 0;
+  h3 {
+    font-family: $fontA;
+    text-transform: uppercase;
+    color: $colorG;
+    margin-top: 2em;
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    margin: 0.75em 0;
+  }
+  a {
+    font-family: $fontA;
+    text-decoration: none;
+    color: $colorG;
+    transition: 0.2s ease-in;
+  }
+  a:hover,
+  a:focus {
+    color: $colorB;
+    transition: 0.2s ease-in;
+  }
+  .footer-main1 {
+    position: relative;
+    img {
+      margin-bottom: 1em;
+    }
+    input {
+      background: url("../img/flag-icon.png") no-repeat left center;
+      display: block;
+      padding: 0.4em 0.7em;
+      margin-bottom: 2em;
+    }
+    input::placeholder {
+      padding-left: 2em;
+    }
+    .main1-wrap {
+      margin-top: 3em;
+      transform: translateY(0);
+    }
+  }
+  //   .footer-main2 {
+  //   }
+  //   .footer-main3 {
+  //   }
+  .footer-main4 {
+    i {
+      text-align: left;
+      color: $colorG;
+      margin-right: 1em;
+    }
+    // li {
+    // }
+  }
+  //   .footer-main5 {
+  //   }
+}
+.footer-sec {
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: $colorG;
+  font-family: $fontA;
+  padding: 2em 0;
+}
+// Media Query Mixins
+
+@include atiphone6 {
+}
+
+@include at576 {
+}
+@include at768 {
+  .container-footer {
+    font-size: 0.6rem;
+  }
+  .footer-main {
+    flex-direction: row;
+    align-items: baseline;
+    text-align: left;
+    h3 {
+      margin-top: 0;
+    }
+  }
+  .footer-main1 {
+    input {
+      margin-bottom: 0;
+    }
+    .main1-wrap {
+      transform: translateY(70%) !important;
+    }
+  }
+}
+@include at992 {
+  .container-footer {
+    font-size: 0.8rem;
+  }
+  .footer-main {
+    flex-direction: row;
+    align-items: baseline;
+    text-align: left;
+    h3 {
+      margin-top: 0;
+    }
+  }
+  .footer-main1 {
+    input {
+      margin-bottom: 0;
+    }
+    .main1-wrap {
+      transform: translateY(70%) !important;
+    }
+  }
+}
+@include at1200 {
+  .container-footer {
+    font-size: 1rem;
+  }
+  .footer-main {
+    flex-direction: row;
+    align-items: baseline;
+    text-align: left;
+    h3 {
+      margin-top: 0;
+    }
+  }
+  .footer-main1 {
+    input {
+      margin-bottom: 0;
+    }
+    .main1-wrap {
+      transform: translateY(70%) !important;
+    }
+  }
+}
